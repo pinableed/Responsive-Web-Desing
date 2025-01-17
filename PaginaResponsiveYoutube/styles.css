@@ -1,0 +1,122 @@
+*{
+    margin:10px;
+    padding: 10px           ;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+.header{
+    background: #000;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .menu{
+        background: #7a2a2a;
+        display: flex;
+        flex-direction: row;
+        flex-flow: row nowrap;
+        align-items:center;
+        height:100px;
+    }
+
+        .logo{
+            background: #ea5455;
+            flex: 1 1 auto;
+
+        }
+        .nav{
+            background: #ea5455;
+            flex: 5 1 auto;
+
+        }
+        .social{
+            background: #ea5455;
+            flex: 1 1 auto;
+        }
+
+    .texto-principal{
+        background: #7a2a2a;
+    }    
+
+            h1{
+                background: #ea5455;
+            }
+.section{
+    background: #000;
+    display: flex;
+}
+
+    .articulos{
+        background: #7a2a2a;
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+
+
+    }
+
+        .article{
+            background: #ea5455;
+            display: flex;
+            flex: 1 1 40%;
+        }
+
+
+        .navegacion{
+            background: #ea5455;
+            flex: 1 1 100%;
+        }
+
+    .aside{
+        background: #7a2a2a;
+        flex: 1 1 auto;
+    }
+
+        .publicidad{
+            background: #ea5455;
+        }
+
+
+.footer{
+    background: #000 ;
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+            background: #ea5455;
+            width: 300px;
+            
+        }
+
+@media all and (max-width: 800px){
+    .section{
+       flex-direction: column;
+    }
+    .menu{
+        flex-direction: column; 
+        height: auto;
+    }
+    .aside{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media all and (max-width: 600px){
+    .articulos{
+       flex-direction: column;
+    }
+ }
+
+ @media all and (max-width: 400px){
+    .aside{
+       flex-direction: column;
+    }
+ }
